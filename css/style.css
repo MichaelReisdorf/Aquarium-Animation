@@ -1,0 +1,99 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgb(52, 197, 245), rgb(64, 168, 202), rgb(27, 166, 212), rgb(38, 38, 155), rgb(4, 4, 99));
+    overflow: hidden;
+}
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.taucher{
+    background: url(../img/animiertes-taucher-bild-0010.gif) center/cover;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    height: 250px;
+    width: 200px;
+}
+.fish {
+    background: url(/img/giphy.gif) center/contain no-repeat;
+    height: 150px;
+    width: 150px;
+    animation: swim 15s infinite linear;
+    z-index: 9999;
+}
+
+.fish2{
+    background: url(/img/index.gif) center/contain no-repeat;
+    height: 200px;
+    width: 200px;
+    animation: swimi 9s infinite linear;
+    z-index: 7777;
+}
+
+@keyframes swim {
+    0%, 100% {transform: translateX(0) scaleX(-1)}
+    45% {transform: translateX(calc(95vw - 200px)) scaleX(-1)}
+    50% {transform: translateX(calc(100vw - 200px)) scaleX(1)}
+    85% {transform: translateX(5vw) scaleX(1)}
+}
+@keyframes swimi {
+    0%, 100% {transform: translateX(0) scaleX(-1)}
+    45% {transform: translateX(calc(95vw - 200px)) scaleX(-1)}
+    50% {transform: translateX(calc(100vw - 200px)) scaleX(1)}
+    85% {transform: translateX(5vw) scaleX(1)}
+}
+.bubble {
+    position: absolute;
+    bottom: -20px;
+    width: 2vmin;
+    height: 2vmin;
+    background-color: white;
+    background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%);
+    border-radius: 50%;
+    animation: bubani 2s infinite linear;
+}
+.b1 {
+    left: 10%;
+    animation-duration: 4s;
+}
+.b2 {
+    left: 30%;
+    animation-duration: 5s;
+}
+.b3 {
+    left: 44%;
+    animation-duration: 3s;
+    transform:scale(4);
+}
+.b4 {
+    left: 66%;
+    animation-duration: 2.5s;
+}
+.b5 {
+    left: 90%;
+    animation-duration: 4s;
+}
+.delay{
+    animation-delay: 2s;
+}
+.delay1 {
+    animation-delay: 3s;
+    animation-duration: 2s;
+}
+@keyframes bubani {
+    0% {transform: translate(0, 0) scale(1); opacity: 1;}
+    10% {transform: translate(-1vw , -10vh) scale(2); opacity: .2;}
+    30% {transform: translate(0vw, -30vh) scale(0.8); opacity: .5;}
+    80% {transform: translate(1vw, -80vh) scale(2); opacity: .8;}
+    100% {transform: translate(0vw, -110vh) scale(1); opacity: .2;}
+}
