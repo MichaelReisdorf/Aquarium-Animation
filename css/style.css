@@ -23,6 +23,7 @@ section {
     right: 50px;
     height: 250px;
     width: 200px;
+    animation: up 5s infinite linear;
 }
 .fish {
     background: url(/img/giphy.gif) center/contain no-repeat;
@@ -39,7 +40,12 @@ section {
     animation: swimi 9s infinite linear;
     z-index: 7777;
 }
-
+@keyframes up {
+    0%, 100% {transform: translateY(-30vh)}
+    45% {transform: translateY(calc(1vh))}
+    50% {transform: translateY(calc(2vh))}
+    85% {transform: translateY(3vh)}
+}
 @keyframes swim {
     0%, 100% {transform: translateX(0) scaleX(-1)}
     45% {transform: translateX(calc(95vw - 200px)) scaleX(-1)}
