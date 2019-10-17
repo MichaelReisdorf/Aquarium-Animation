@@ -26,7 +26,7 @@ section {
     animation: up 5s infinite linear;
 }
 .fish {
-    background: url(/img/giphy.gif) center/contain no-repeat;
+    background: url(../img/giphy.gif) center/contain no-repeat;
     height: 150px;
     width: 150px;
     animation: swim 15s infinite linear;
@@ -34,7 +34,7 @@ section {
 }
 
 .fish2{
-    background: url(/img/index.gif) center/contain no-repeat;
+    background: url(../img/index.gif) center/contain no-repeat;
     height: 200px;
     width: 200px;
     animation: swimi 9s infinite linear;
